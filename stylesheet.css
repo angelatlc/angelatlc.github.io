@@ -1,43 +1,10 @@
 <style>
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence" />
 
 body {
       margin:0;
       padding:0;
       background-color: #ffffff;
-      font-family: Convergence, Helvetica, sans-serif;
-}
-h1 { font-family: Convergence; font-size: 24px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 700; 
-	line-height: 26.4px; 
-} 
-h3 { font-family: Convergence; 
-	font-size: 14px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 700; 
-	line-height: 15.4px; 
-} 
-p { font-family: Convergence; 
-	font-size: 14px; 
-	font-style: normal; font-variant: normal; 
-	font-weight: 400; 
-	line-height: 20px; 
-} 
-blockquote { font-family: Convergence; 
-	font-size: 21px; font-style: normal; 
-	font-variant: normal; 
-	font-weight: 400; 
-	line-height: 30px; 
-} 
-pre { font-family: Convergence; 
-	font-size: 13px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 400; 
-	line-height: 18.5714px; 
+      font-family: PT+Sans+Caption, Convergence, Helvetica, sans-serif;
 }
 nav {
       background-color: rgba(0, 60, 255, 0.15);
@@ -54,7 +21,6 @@ footer {
       clear:both;
       margin:20px 0 50px 0;
       text-align:center;
-      //background-color: rgba(255, 200, 0, 0.15);
       background-color: rgba(0, 60, 255, 0.15);
       padding:3px; 
 }
