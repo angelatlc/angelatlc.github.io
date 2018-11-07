@@ -3,7 +3,8 @@ body {
       margin:0;
       padding:0;
       background-color: #ffffff;
-      font-family: Verdana, Helvetica, sans-serif !important;
+      //font-family: Verdana, Helvetica, sans-serif !important;
+      font-family:consolas,monaco,"Andale Mono",monospace;
 }
 nav {
       background-color: rgba(0, 60, 255, 0.15);
