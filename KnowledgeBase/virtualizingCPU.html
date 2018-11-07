@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Website of Angela T. Labianca-Campbell</title>
+<base href="https://angelatlc.github.io/">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+	
+<body>
+	
+<div id="container">
+<div id="logo">
+<img src="logo.png" width="*" height="*" alt="Angela T. Labianca-Campbell"></div>
+
+<nav>
+  <ul>
+  <!-- navigation links for only the desktop view (hidden in tablet and phone view) -->
+  <li class="desktop"><a href="about.html">About Me</a></li>
+  <li class="desktop"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="desktop"><a href="projects.html">Projects</a></li>
+  <li class="desktop"><a href="resume.html">Online Resume</a></li>
+  <li class="desktop"><a href="contact.html">Contact Info</a></li>
+  <!-- navigation links for only the tablet view (hidden in desktop and phone view) -->
+  <li class="tablet"><a href="about.html">About </a></li>
+  <li class="tablet"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="tablet"><a href="projects.html">Projects</a></li>
+  <li class="tablet"><a href="resume.html">Resume</a></li>
+  <li class="tablet"><a href="contact.html">Contact</a></li>
+  <!-- navigation links for only the phone view (hidden in desktop and tablet view)-->
+  <li class="phone"><a href="about.html">About Me</a></li>
+  <li class="phone"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="phone"><a href="projects.html">Projects</a></li>
+  <li class="phone"><a href="resume.html">Resume</a></li>
+  <li class="phone"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<h1>Virtualizing the CPU</h1>
+<p>How does an operating 
+system virtualizes the CPU, thereby creating the illusion 
+of multiple CPUs?  An important point to make before 
+delving into how virtualizing the CPU is accomplished 
+needs to be that hardware devices can have more than one 
+physical CPU (Arpaci-Dusseau & Arpaci-Dusseau, 2012).  
+For the sake of discussion, however, let us limit the 
+discussion to hardware devices with only one physical CPU 
+to be virtualized.  With this in mind, the point of this 
+writing is to describe how the OS can multitask several 
+processes (running programs) seemingly at once.
+</p>
+<p>Operating systems feign running several processes on 
+the CPU at once through a technique called Time Sharing, 
+which amounts to &quot;&#133;running one process, then stopping 
+it and running another, and so forth&#133;&quot; (Arpaci-Dusseau & 
+Arpaci-Dusseau, 2012).  Through time-managed sharing, 
+multiple processes can use the CPU and other device 
+resources, with the only downfall being that the speed 
+and performance of individual processes necessarily 
+decreases as more and more processes vie for the use of 
+the CPU.  
+</p>
+<p>Perhaps the most practical question regarding 
+virtualizing the CPU is determining how the OS decides 
+which process among many will access system resources at 
+any given point in time, based on the process state that 
+the processes are in.  According to Arpaci-Dusseau & 
+Arpaci-Dusseau (2012), the processes can transition between 
+the following states:  running, ready, and blocked.  In 
+addition, this context switch is determined by a scheduling 
+policy based on a variety of factors (including performance 
+metrics, workload knowledge, and historical information) 
+to make this decision.  
+</p>
+<p>There are different algorithms that an operating 
+system can use to schedule processes while multitasking 
+programs (Negi & Kalra, 2014).  The 
+point of experimenting with different scheduling policies 
+is to make the most efficient use of the CPU by reducing 
+&quot;waiting time, turnaround time, response time and context 
+switch of processes&quot; (Negi & Kalra, 2014).  According to 
+this same article, most operating systems use the &quot;Round 
+Robin&quot; scheduling policy for CPU time sharing.  This policy 
+will go through the various processes cyclically, giving 
+them each a fixed amount of time to run and then switching 
+to the next one in the cycle, with the just performed process 
+going to the bottom of the ready list.  Apparently, the 
+Round Robin algorithm can be made more efficient, by coming 
+up with better and better algorithms to determining how long 
+each process should have access to the CPU before switching 
+to the next process.  Round Robin is already more efficient 
+than other policies like First Come First Serve or Smallest 
+Job First, but it can be improved further by optimizing the 
+amount of time each process has access to the CPU in the 
+Round Robin (Negi & Kalra, 2014).
+</p>
+
+<h2>References</h2>
+
+<p>Arpaci-Dusseau, R. & Arpaci-Dusseau, A. (2012). 
+Operating Systems: Three Easy Pieces. Madison, WI: 
+University of Wisconsin-Madison. Retrieved from 
+http://pages.cs.wisc.edu/~remzi/OSTEP//
+</p>
+
+<p>Negi, S. & Kalra, P. (2014).  A Comparative 
+Performance Analysis of Various Variants of Round 
+Robin Scheduling Algorithm.  International Journal 
+of Information & Computation Technology, 4 (7), 
+765-772.  Retrieved from 
+http://www.ripublication.com/irph/ijict_spl/ijictv4n7spl_18.pdf
+</p>
+
+
+</main>
+<div id="topics-list">
+    <h2>Knowledge Base</h2>
+  	<ul>
+
+	<li>Operating Systems
+  		<ul>
+  		<li>Unit 1</li>
+  		<li>Unit 2</li>
+  		<li>Unit 3</li>
+  		</ul>
+  	</li>
+
+  	<li>Web Programming
+  		<ul>
+  		<li>Unit 1</li>
+  		<li>Unit 2</li>
+  		<li>Unit 3</li>
+ 	 	</ul>
+  	</li>
+  	
+  	</ul>
+</div>
+
+<footer>
+  <p>Copyright 2018 Labianca-Campbell.com. All rights reserved. <a href="#">Terms of use</a>. </p>
+</footer>
+
+</div>
+</body>
+</html>
