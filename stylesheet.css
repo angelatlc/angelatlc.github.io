@@ -1,10 +1,10 @@
 <style>
 
-body {
+body h1 h2 h3 h4 h5 p em block{
       margin:0;
       padding:0;
       background-color: #ffffff;
-      font-family: sans-serif;
+      font-family: sans-serif !important;
 }
 nav {
       background-color: rgba(0, 60, 255, 0.15);
