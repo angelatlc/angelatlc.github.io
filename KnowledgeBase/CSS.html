@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Website of Angela T. Labianca-Campbell</title>
+<base href="https://angelatlc.github.io/">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+	
+<body>
+	
+<div id="container">
+<div id="logo">
+<img src="logo.png" width="*" height="*" alt="Angela T. Labianca-Campbell"></div>
+
+<nav>
+  <ul>
+  <!-- navigation links for only the desktop view (hidden in tablet and phone view) -->
+  <li class="desktop"><a href="about.html">About Me</a></li>
+  <li class="desktop"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="desktop"><a href="projects.html">Projects</a></li>
+  <li class="desktop"><a href="resume.html">Online Resume</a></li>
+  <li class="desktop"><a href="contact.html">Contact Info</a></li>
+  <!-- navigation links for only the tablet view (hidden in desktop and phone view) -->
+  <li class="tablet"><a href="about.html">About </a></li>
+  <li class="tablet"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="tablet"><a href="projects.html">Projects</a></li>
+  <li class="tablet"><a href="resume.html">Resume</a></li>
+  <li class="tablet"><a href="contact.html">Contact</a></li>
+  <!-- navigation links for only the phone view (hidden in desktop and tablet view)-->
+  <li class="phone"><a href="about.html">About Me</a></li>
+  <li class="phone"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="phone"><a href="projects.html">Projects</a></li>
+  <li class="phone"><a href="resume.html">Resume</a></li>
+  <li class="phone"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<h1>Cascading Style Sheets</h1>
+<p>Cascading Style Sheets (or CSS) is language that enhances 
+HTML, or other markup languages, so that a browser will render 
+a web page with specific formatting and layout for how the page 
+will be visually displayed to a viewer (&quot;How CSS Works&quot;, 
+February 15, 2018).  
+</p>
+
+<h2>What does it mean that the style sheets are cascading?</h2>
+<p>For laypeople, the word cascade means a downward flow of water 
+that happens in stages over rock ledges.  In CSS, the idea that 
+style sheets cascade means that there is a specific algorithm that 
+controls the order or flow in which the styles get applied to a 
+webpage (&quot;Cascade and Inheritance&quot;, June 15, 2018).  What this 
+means is that sometimes CSS rules might have selectors pointing 
+to the same element, or different style/layout code directed at 
+the same part of the website.  If there are conflicting styles 
+being applied to an element, only one of them can be displayed 
+to the user.  The cascade determines the order of priority of 
+the CSS rules which could get applied to an element, based on 
+importance, specificity, and order in the source code (&quot;Cascade 
+and Inheritance&quot;, June 15, 2018).
+</p>
+
+<h2>What is the order of priority of CSS?</h2>
+<p>When there are multiple style declarations to an element that 
+conflict, they will be applied in the following order, with the 
+last one being displayed for the viewer:
+	<ul>
+	<li>Declarations in user agent style sheets (e.g. the 
+	browser&apos;s default styles, used when no other styling 
+	is set).</li>
+	<li>Normal declarations in user style sheets (custom styles 
+	set by a user).</li>
+	<li>Normal declarations in author style sheets (these are the 
+	styles set by us, the web developers).</li>
+	<li>Important declarations in author style sheets</li>
+	<li>Important declarations in user style sheets</li>
+	(excerpted from &quot;Cascade and Inheritance&quot;, June 15, 2018)</li>
+	</ul>
+</p>
+
+<p>In summary, the developer&apos;s style sheet almost always overrides 
+other style sheets, unless the user&apos;s style sheet is tagged as 
+&quot;!important.&quot;  In addition, specific styles override general 
+styles and when rules have equal specificity, the rule closest to the 
+element overrides the others (&quot;The &apos;Cascade&apos; of CSS&quot;, n.d.).
+</p> 
+
+<h2>Cool things you can do with CSS, which cannot be done easily in HTML</h2>
+
+<p>One website I found showed multiple cool things you can do with CSS that 
+cannot be easily done with HTML alone (Walsh, May 5, 2014).  I chose to 
+discuss 5 of the tips here.  However, the code for the last tip comes 
+from www.w3schools.com as the other website&apos;s code was very complicated.  
+In order to show you both the code and the results, I used www.w3schools.com 
+Tryit Editor (n.d.).  Please click on the links to view and run the code 
+to see the result.
+	<ul>
+	<li><a href= "https://www.w3schools.com/code/tryit.asp?filename=FT8QU7HZJ5PM">Create a circle</a></li>
+	<li><a href= "https://www.w3schools.com/code/tryit.asp?filename=FT8RSZW8ARSK">Filter an image</a></li>
+	<li><a href= "https://www.w3schools.com/code/tryit.asp?filename=FT8SOV6L29WH">Disable pointer clicks</a></li>
+	<li><a href= "https://www.w3schools.com/code/tryit.asp?filename=FT91ON2D072J">Use counters for a table of contents</a></li>		
+	<li><a href= "https://www.w3schools.com/code/tryit.asp?filename=FT939XA6QSY9">Make slideshows</a></li>
+	</ul>
+</p>
+ 
+
+<h2>References</h2>
+
+<p>&quot;Cascade and Inheritance&quot; (June 15, 2018). MDN web docs. 
+Retrieved from 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance
+</p>
+
+<p>&quot;How CSS Works&quot; (February 15, 2018). MDN web docs. 
+Retrieved from 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works
+</p>
+
+<p>&quot;The &apos;Cascade&apos; of CSS&quot; (n.d.). BU Tech Web. Retrieved from 
+http://www.bu.edu/tech/services/cccs/websites/www/non-wordpress/start/css/css-basics/the-cascade-of-css/
+</p>
+
+<p>&quot;Tryit Editor&quot; (n.d.). W3schools.com. Retrieved from 
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default
+</p>
+
+<p>Walsh, D. (May 5, 2014). &quot;7 Things You Didn&apos;t Know You 
+Could Do with CSS&quot;.  Retrieved from 
+https://davidwalsh.name/css-facts
+</p>
+
+
+</main>
+<div id="topics-list">
+    <h2>Knowledge Base</h2>
+  	<ul style="list-style-type:none">
+
+	<li>Operating Systems
+  		<ul>
+	  	<li><a href="/KnowledgeBase/security.html">Securing the Operating System</a></li>  
+	  	<li><a href="/KnowledgeBase/virtualization.html">Virtualization and Virtual Machines</a></li>  
+	  	<li><a href="/KnowledgeBase/virtualizingCPU.html">Virtualizing the CPU</a></li>  
+	  	<li><a href="/KnowledgeBase/shell32.html">What is shell32.dll?</a></li>    	
+	   	<li><a href="/KnowledgeBase/swapping.html">Reducing the Cost of Page Swapping</a></li>	
+		</ul>
+  	</li>
+
+  	<li>Web Programming
+  		<ul>
+	  	<li><a href="/KnowledgeBase/CSS.html">Cascading Style Sheets</a></li>
+		<li><a href="/KnowledgeBase/CMS.html">Content Management System (CMS)</a></li>
+	  	<li><a href="/KnowledgeBase/privacy.html">Protecting Our Online Privacy</a></li>  
+  	 	</ul>
+  	</li>
+
+   	<li>Network Communications
+  		<ul>
+		<li><a href="/KnowledgeBase/cloud.html">Cloud Computing</a></li>
+	   	<li><a href="/KnowledgeBase/backbone.html">Cyber Attacks and the Internet Backbone</a></li>
+	   	<li><a href="/KnowledgeBase/ATMvEthernet.html">Ethernet vs Asynchronous Transfer Mode</a></li>
+	   	<li><a href="/KnowledgeBase/originTCP.html">Origins of TCP/IP</a></li>
+	   	<li><a href="/KnowledgeBase/4Gtypes.html">Types of 4G Networks</a></li>
+ 	 	</ul>
+  	</li>
+ 	
+  	</ul>
+</div>
+
+
+<footer>
+  <p>Copyright 2018 Labianca-Campbell.com. All rights reserved. </p>
+</footer>
+
+</div>
+</body>
+</html>
+
