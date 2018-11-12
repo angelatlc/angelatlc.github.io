@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Website of Angela T. Labianca-Campbell</title>
+<base href="https://angelatlc.github.io/">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+	
+<body>
+	
+<div id="container">
+<div id="logo">
+<img src="logo.png" width="*" height="*" alt="Angela T. Labianca-Campbell"></div>
+
+<nav>
+  <ul>
+  <!-- navigation links for only the desktop view (hidden in tablet and phone view) -->
+  <li class="desktop"><a href="about.html">About Me</a></li>
+  <li class="desktop"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="desktop"><a href="projects.html">Projects</a></li>
+  <li class="desktop"><a href="resume.html">Online Resume</a></li>
+  <li class="desktop"><a href="contact.html">Contact Info</a></li>
+  <!-- navigation links for only the tablet view (hidden in desktop and phone view) -->
+  <li class="tablet"><a href="about.html">About </a></li>
+  <li class="tablet"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="tablet"><a href="projects.html">Projects</a></li>
+  <li class="tablet"><a href="resume.html">Resume</a></li>
+  <li class="tablet"><a href="contact.html">Contact</a></li>
+  <!-- navigation links for only the phone view (hidden in desktop and tablet view)-->
+  <li class="phone"><a href="about.html">About Me</a></li>
+  <li class="phone"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="phone"><a href="projects.html">Projects</a></li>
+  <li class="phone"><a href="resume.html">Resume</a></li>
+  <li class="phone"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<h1>Reducing the Cost of Page Swapping</h1>
+<p>
+Modern computers increase efficiency and response time by 
+allowing multiple programs to share system resources, like 
+the CPU and main memory (Arpaci-Dusseau & Arpaci-Dusseau, 2012).  
+Indeed, this memory management function is one of the most 
+important jobs that an operating system performs; with its goals 
+being to increase efficiency, protect the OS and other programs 
+from one another, and doing all of this behind the scenes and 
+without programs being aware.  Memory can be virtualized with 
+two basic approaches, segmentation and paging; but an even 
+better option is to use a dialectic approach that 
+incorporates both (Arpaci-Dusseau & Arpaci-Dusseau, 2012).  
+Specifically, the operating system can make use of 
+of &quot;multi-level page tables&quot;, which are themselves broken down 
+to fit onto a page in such a way that sparse areas of the address 
+space are not allocated but ignored.  However, even this 
+dialectic approach is not efficient enough, and so the OS
+resorts to &quot;swapping&quot; page tables to disk as a way of 
+alleviating the burden on main memory.  That said, even page 
+swapping would be inefficient if it were not for caching often-used 
+addresses onto the TLB as opposed to accessing the page tables 
+on disk (Arpaci-Dusseau & Arpaci-Dusseau, 2012).
+</p>
+
+<h2>Newer Memory Management Technologies</h2>
+
+<p>According to the Sonar Systems Group at the University of 
+Wisconsin (2017), the paging of virtual memory will evolve 
+from being stored on traditional disk to solid-state flash 
+memory as the price of this technology drops.  Their research 
+has shown that their FlashVM system can drop the execution 
+time of programs by 94 percent as well as reduce &quot;garbage 
+collection&quot; times by a factor of ten.  This research group 
+has also shown that solid-state technology can be applied to 
+a cache.  When running simulations on their FlashTier cache 
+technology, they found that &quot;FlashTier reduces address translation 
+space by 60% and silent eviction improves performance by up 
+to 167%. Furthermore, FlashTier can recover from the crash of a 
+100GB cache in only 2.4 seconds.&quot; (Sonar Systems Group, 2017).
+</p>
+
+<p>
+According to Bigelow (2016), systems can even perform &quot;memory 
+compression&quot; instead of traditional caching as a main memory 
+space-saving technique.  Instead of doing traditional swapping,
+&quot;the idle memory page is first compressed and then it is stored 
+to a small area of the VM's memory set aside as a memory 
+compression cache [..., freeing...] memory and allows greater 
+levels of memory overcommitment. When compressed memory pages 
+are needed later, it's a much faster process to retrieve 
+compressed pages from the cache, decompress the pages, and 
+restore the pages to working memory than it would be to 
+retrieve them uncompressed from a swap file&quot; (Bigelow, 2016).
+There is a tradeoff with memory compression--the time it takes 
+to decompress.  However, this should be substantially less than 
+the time costs of retrieving swapped files from disk.
+</p>
+
+<p>There are even innovations in how caches synchronize.  For 
+example, researchers at MIT developed a directory system that 
+increases memory efficiency by anywhere from 30% to 96%, 
+depending on the size of the core chip being used (Hardesty, 2015).  
+According to Hardesty, their method ensure cache coherency by 
+determining &quot;which cores are working on that data and sends them 
+messages invalidating their locally stored copies of it&quot; (2015).  
+My understanding of their method is that the caches are not using 
+the traditional physical, and therefore objective, timestamp to 
+determine which process has updated last, instead each cache is 
+using an internal timestamp to keep track.
+</p>
+
+
+<h2>References</h2>
+
+<p>Arpaci-Dusseau, R. & Arpaci-Dusseau, A. (2012). Operating Systems: 
+Three Easy Pieces. Madison, WI: University of 
+Wisconsin-Madison. Retrieved from 
+http://pages.cs.wisc.edu/~remzi/OSTEP//
+</p>
+
+<p>Bigelow, S.J. (2016). How does memory compression compare to 
+page swapping?. TechTarget. Retrieved from 
+https://searchservervirtualization.techtarget.com/answer/How-does-memory-compression-compare-to-page-swapping
+</p>
+
+<p>Hardesty, L. (2015). How new memory management is changing
+computer chip technology.  World Economic Forum.  Retrieved from 
+https://www.weforum.org/agenda/2015/09/how-new-memory-management-is-changing-computer-chip-technology/
+</p>
+
+<p>Sonar Systems Group (2017).  University of Wisconsin.  Retrieved from
+http://research.cs.wisc.edu/sonar/projects/memory_technology/index.html
+</p>
+
+
+</main>
+<div id="topics-list">
+    <h2>Knowledge Base</h2>
+  	<ul style="list-style-type:none">
+
+	<li>Operating Systems
+  		<ul>
+	  	<li><a href="/KnowledgeBase/security.html">Securing the Operating System</a></li>  
+	  	<li><a href="/KnowledgeBase/virtualization.html">Virtualization and Virtual Machines</a></li>  
+	  	<li><a href="/KnowledgeBase/virtualizingCPU.html">Virtualizing the CPU</a></li>  
+	  	<li><a href="/KnowledgeBase/shell32.html">What is shell32.dll?</a></li>    	
+	   	<li><a href="/KnowledgeBase/swapping.html">Reducing the Cost of Page Swapping</a></li>	
+		</ul>
+  	</li>
+
+  	<li>Web Programming
+  		<ul>
+	  	<li><a href="/KnowledgeBase/CMS.html">Content Management System (CMS)</a></li>
+	  	<li><a href="/KnowledgeBase/privacy.html">Protecting Our Online Privacy</a></li>  
+  	 	</ul>
+  	</li>
+
+   	<li>Network Communications PLUS
+  		<ul>
+		<li><a href="/KnowledgeBase/cloud.html">Cloud Computing</a></li>
+	   	<li><a href="/KnowledgeBase/backbone.html">Cyber Attacks and the Internet Backbone</a></li>
+	   	<li><a href="/KnowledgeBase/ATMvEthernet.html">Ethernet vs Asynchronous Transfer Mode</a></li>
+	   	<li><a href="/KnowledgeBase/originTCP.html">Origins of TCP/IP</a></li>
+	   	<li><a href="/KnowledgeBase/4Gtypes.html">Types of 4G Networks</a></li>
+ 	 	</ul>
+  	</li>
+ 	
+  	</ul>
+</div>
+
+
+<footer>
+  <p>Copyright 2018 Labianca-Campbell.com. All rights reserved. </p>
+</footer>
+
+</div>
+</body>
+</html>
