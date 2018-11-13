@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Website of Angela T. Labianca-Campbell</title>
+<base href="https://angelatlc.github.io/">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+	
+<body>
+	
+<div id="container">
+<div id="logo">
+<img src="logo.png" width="*" height="*" alt="Angela T. Labianca-Campbell"></div>
+
+<nav>
+  <ul>
+  <!-- navigation links for only the desktop view (hidden in tablet and phone view) -->
+  <li class="desktop"><a href="about.html">About Me</a></li>
+  <li class="desktop"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="desktop"><a href="projects.html">Projects</a></li>
+  <li class="desktop"><a href="resume.html">Online Resume</a></li>
+  <li class="desktop"><a href="contact.html">Contact Info</a></li>
+  <!-- navigation links for only the tablet view (hidden in desktop and phone view) -->
+  <li class="tablet"><a href="about.html">About </a></li>
+  <li class="tablet"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="tablet"><a href="projects.html">Projects</a></li>
+  <li class="tablet"><a href="resume.html">Resume</a></li>
+  <li class="tablet"><a href="contact.html">Contact</a></li>
+  <!-- navigation links for only the phone view (hidden in desktop and tablet view)-->
+  <li class="phone"><a href="about.html">About Me</a></li>
+  <li class="phone"><a href="kbase.html">Knowledge Base</a></li>
+  <li class="phone"><a href="projects.html">Projects</a></li>
+  <li class="phone"><a href="resume.html">Resume</a></li>
+  <li class="phone"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<h1>What is Responsive Design?</h1>
+<p>
+Responsive Design means that web pages are created to look 
+good on any device, including large desktop monitors, laptops, 
+tablets, and small-screened smartphones (Pilon, 2018; &quot;HTML 
+Responsive Web Design&quot;, 2018).  Traditional web pages may 
+display correctly on a large monitor, but on smaller devices 
+a user may need to scroll horizontally in order to see all of 
+the content.  Websites that are graphics heavy might be slow 
+to load and very large images might &quot;break&quot; the layout on 
+smaller devices. With a responsive design approach, a web 
+page has HTML elements and CSS styles which will automatically 
+respond differently when viewed on devices of different sizes, 
+so content is readable and easy to navigate.
+</p>
+
+<img src="responsive.jpg" width="*" height="*" alt="Responsive Design Graphic">
+
+<p>
+One way to illustrate responsive design is to compare it directly 
+with a traditional website and Deque Systems has done just this 
+as part of their Web Accessibility curriculum.  
+<a href="https://dequeuniversity.com/library/responsive/1-non-responsive">
+This link</a> will take you to a traditional &quot;fixed&quot; web site.
+To simulate what this would look like on a tablet or smartphone, 
+squish your browser horizontally, so that content to the right 
+is being cut off and you would need to scroll right to see it.
+To see the same website with a responsive design, click 
+<a href="https://dequeuniversity.com/library/responsive/1-responsive">
+this link</a>. 
+Once again, squish your browser width or view it in a phone or 
+tablet and you should notice that the layout changes and the 
+image becomes narrower.  
+As part of their curriculum, they provide the code for the 
+responsive web page, which you can find 
+<a href="https://dequeuniversity.com/library/responsive/1-source-responsive">
+here</a>.
+</p>
+
+<p>
+I am choosing just a few examples of code from their source that 
+are notable.
+</p>
+
+<div style="overflow-x:auto;">
+  <table border="1" style="border-collapse: collapse" cellpadding="10">
+    <tr>
+	<td style = "width:30%">The viewport is the same as the device width.  
+            This makes it so that content will not run off 
+            the right side of the browser window.</td>
+	<td style = "width:70%">&#60;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&#62;</td>
+    </tr>
+    <tr>
+	<td>Images will only ever be as wide as the browser 
+            window and they will retain the same aspect ratio.</td>
+	<td>img {max-width:100%; height:auto;} </td>
+    </tr>
+    <tr>
+	<td>Different nav links were created for desktops, tablets, and phones
+            Notice that tablet has a single word per list item to make the nav bar narrower.</td>
+	<td>
+  		&#60;li class="desktop"&#62;&#60;a href="#"&#62;Learn about Accessibility&#60;/a&#62;&#60;/li&#62; <br>
+  		&#60;li class="desktop"&#62;&#60;a href="#"&#62; Testing Tools&#60;/a&#62;&#60;/li&#62; <br>
+  		&#133; <br>
+  		&#60;li class="tablet"&#62;&#60;a href="#"&#62;Learn &#60;/a&#62;&#60;/li&#62; <br>
+  		&#60;li class="tablet"&#62;va href="#"&#62;Tools&#60;/a&#62;&#60;/li&#62; <br>
+ 		&#133; <br>
+  		&#60;li class="phone"&#62;&#60;a href="#"&#62;Learn about Accessibility&#60;/a&#62;&#60;/li&#62; <br>
+  		&#60;li class="phone"&#62;&#60;a href="#"&#62;Testing Tools&#60;/a&#62;&#60;/li&#62; <br>
+		&#133; <br>   </td>
+    </tr>
+    <tr>
+	<td>When a phone is detected the nav menu is stacked instead of 
+horizontal.</td>
+	<td>nav li.phone {display:block;}
+
+	</td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+<h2>Why is the mobile web the most important element of web design?</h2>
+<p>
+More and more people are viewing web pages on mobile devices. &quot;A recent 
+Pew study 77 % of Americans now own smartphones in 2018 which is up 
+from just 35% in Pew Research Center&apos;s first smartphone ownership 
+survey carried out in 2011.&quot;  More importantly, mobile traffic on 
+websites is growing.  Infact, website traffic via mobile devices is 
+on the rise, whereas the total percentage of traffic from desktops 
+in declining (Enge, April 27, 2018).
+</p>
+
+<p>
+Not only do web traffic trends support the idea that mobile web is 
+the most important element of web design, but website developers also 
+need to be mindful of the fact that Google announced the mobile-first 
+index, which will rank websites based optimization for mobile devices. 
+&quot;If your website does not have a responsive layout, has a slow loading 
+speed or poorly designed navigation and content, your ranking is likely 
+to decrease if you don&apos;t optimize your site for mobile before the shift&quot; 
+(Marse, Apr 10, 2018).
+</p>
+
+
+
+
+<h2>References</h2>
+<p>Enge, E. (April 27, 2018).  &quot;Mobile vs Desktop Usage in 
+2018: Mobile takes the lead&quot;. Stone Temple. Retrieved from 
+https://www.stonetemple.com/mobile-vs-desktop-usage-study/
+</p>
+<p>&quot;HTML Responsive Web Design&quot;, (2018). W3schools. 
+Retrieved from 
+https://www.w3schools.com/html/html_responsive.asp
+</p>
+<p>Marse, A. (Apr 10, 2018). &quot;4 Steps to get Your Small 
+Business Website Ready for Mobile First Index&quot;.  Small 
+Business Trends.  Retrieved from 
+https://smallbiztrends.com/2018/04/mobile-first-index-small-business.html
+</p>
+<p>Pilon, A. (May 22, 2018). &quot;What is Responsive Web Design?&quot; 
+Small Business Trends.  Retrieved from 
+https://smallbiztrends.com/2013/05/what-is-responsive-web-design.html
+</p>
+<p>&quot;Responsive Design Example 1: A 2-column design with header 
+and footer&quot; (2018). Deque University. Retrieved from 
+https://dequeuniversity.com/library/responsive/1
+</p>
+<p>&quot;Responsive Web Design&quot; (2018).  Tinzi Marketing. Retrieved from 
+https://tinzi.com/web-design/responsive-web-design/
+</p>
+
+
+</main>
+<div id="topics-list">
+    <h2>Knowledge Base</h2>
+  	<ul style="list-style-type:none">
+
+	<li>Operating Systems
+  		<ul>
+	  	<li><a href="/KnowledgeBase/security.html">Securing the Operating System</a></li>  
+	  	<li><a href="/KnowledgeBase/virtualization.html">Virtualization and Virtual Machines</a></li>  
+	  	<li><a href="/KnowledgeBase/virtualizingCPU.html">Virtualizing the CPU</a></li>  
+	  	<li><a href="/KnowledgeBase/shell32.html">What is shell32.dll?</a></li>    	
+	   	<li><a href="/KnowledgeBase/swapping.html">Reducing the Cost of Page Swapping</a></li>	
+		</ul>
+  	</li>
+
+  	<li>Web Programming
+  		<ul>
+	  	<li><a href="/KnowledgeBase/CSS.html">Cascading Style Sheets</a></li>
+		<li><a href="/KnowledgeBase/CMS.html">Content Management System (CMS)</a></li>
+	  	<li><a href="/KnowledgeBase/privacy.html">Protecting Our Online Privacy</a></li>  
+  	 	</ul>
+  	</li>
+
+   	<li>Network Communications
+  		<ul>
+		<li><a href="/KnowledgeBase/cloud.html">Cloud Computing</a></li>
+	   	<li><a href="/KnowledgeBase/backbone.html">Cyber Attacks and the Internet Backbone</a></li>
+	   	<li><a href="/KnowledgeBase/ATMvEthernet.html">Ethernet vs Asynchronous Transfer Mode</a></li>
+	   	<li><a href="/KnowledgeBase/originTCP.html">Origins of TCP/IP</a></li>
+	   	<li><a href="/KnowledgeBase/4Gtypes.html">Types of 4G Networks</a></li>
+ 	 	</ul>
+  	</li>
+ 	
+  	</ul>
+</div>
+
+
+<footer>
+  <p>Copyright 2018 Labianca-Campbell.com. All rights reserved. </p>
+</footer>
+
+</div>
+</body>
+</html>
