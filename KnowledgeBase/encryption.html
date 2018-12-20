@@ -41,23 +41,38 @@
 
 <main>
 
-<h1>Contact Me</h1>
+<h1>Data-at-Rest Encryption</h1>
 <p>
-Have questions? Want to keep in touch? I would love to hear from you. 
+According to the U.S. Federal Register at 74 FR 42740 (August 24, 2009),  data-at-rest &quot;includes data that resides in databases, file systems, flash drives, memory, and any other structured storage method&quot;; and this is in contrast to data-in-motion, data-in-use and data-disposed.  Data-at-rest can include HIPPA protected health information, credit card PCI DSS data,  or other types of sensitive electronic information that we do not want unauthorized users to have access to.  An unauthorized user of stored data could steal or corrupt the breached data, potentially leading to identity theft and other negative consequences of data loss.  In order to protect our sensitive data-at-rest from would-be hackers and their prying eyes, it needs to be encrypted.
 </p>
 
-<p>
-<a href="mailto:angela@labianca-campbell.com?subject=About+your+github+website" target="_top"><img class="floatleft" src="email.png"  width="*" height="*"  alt="Email graphic"></a>
-E-mail:
-<a href="mailto:angela@labianca-campbell.com?subject=About+your+github+website" target="_top">Angela@Labianca-Campbell.com</a>
-</p>
-<p>
-Tel: (978) 912-0120
-</p>
-<p>
-LinkedIn: angelalabiancacampbell
+<h2>3 Types of Data-at-Rest Encryption:</h2>
+<ul>
+<li>Full-disk encryption - a password prevents unauthorized access to a device (e.g., after a system boot or when &quot;waking&quot; a sleeping device).</li>
+<li>File system encryption - a password protects only a particular partition, file system, or even a single directory.</li>
+<li>Database encryption - a password protects a specific database application, like Oracle or SQL.</li>
+(Arzt & Berry, 2016)
+</ul>
+
+<h2>Microsoft BitLocker Provides Data-at-Rest Encryption</h2>
+
+There are numerous products that encrypt data-at-rest.  One such product is Microsoft&apos;s BitLocker (Vigo, 2018), which makes full-disk encryption as well as USB thumb drive protection possible.  Depending on how it is configured, it will either prompt users for a password or it can display an error message that tells the would-be user that the drive cannot be accessed.  Unfortunately, it is possible for hackers to use phishing and other social engineering schemes to learn a user&apos;s password; so, even strongly encrypted sensitive persistent data can be at risk.
+
+
+<h2>References</h2>
+
+<p>Arpaci-Dusseau, R. & Arpaci-Dusseau, A. (2012). Operating Systems: Three Easy Pieces. Madison, WI: University of Wisconsin-Madison. Retrieved from http://pages.cs.wisc.edu/~remzi/OSTEP//
 </p>
 
+<p>Arzt, N. H. & Berry, M. (2016).  Encrypting Data at Rest on Servers: What does it get you?  HLN.  Retrieved from https://hln.com/encrypting-data-at-rest-on-servers-what-does-it-get-you/
+</p>
+
+<p>US DHHS; Breach Notification for Unsecured Protected Health Information, 74(162)  Fed. Reg. 42740 (August 24, 2009) (to be codified at 45 C.F.R. pts. 160 & 164). Retrieved from https://www.govinfo.gov/content/pkg/FR-2009-08-24/pdf/E9-20169.pdf
+</p>
+
+<p>Vigo, J. (2018).  MICROSOFT BITLOCKER:
+AN INSIDER&apos;S GUIDE.  TechRepublic. Retrieved from https://www.techrepublic.com/resource-library/whitepapers/microsoft-bitlocker-an-insider-s-guide-free-pdf/post/?regId=&asset=33164295&skipAutoLoad=1
+</p>
 
 </main>
 <div id="topics-list">
